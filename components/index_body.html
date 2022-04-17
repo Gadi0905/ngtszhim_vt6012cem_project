@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index body</title>
+
+    <style>
+        .table-hidden tbody {
+            overflow-y: auto;
+            height: 480px;
+            display: block;
+        }
+
+        .table-hidden tr {
+            width: 100%;
+            display: inline-table;
+        }
+
+        td {
+            width: 333px;
+            height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <div class="row" style="padding-left: 8%; padding-top: 25px;">
+        <!-- left components -->
+        <div class="col-sm-2">
+            <div class="card bg-info">
+                <div class="card-body">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            招聘形式
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">招聘形式 1</a>
+                            <a class="dropdown-item" href="#">招聘形式 2</a>
+                            <a class="dropdown-item" href="#">招聘形式 3</a>
+                        </div>
+                    </div>
+                    <hr class="bg-dark border-2 border-top border-dark">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            招聘對象
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">招聘對象 1</a>
+                            <a class="dropdown-item" href="#">招聘對象 2</a>
+                            <a class="dropdown-item" href="#">招聘對象 3</a>
+                        </div>
+                    </div>
+                    <hr class="bg-dark border-2 border-top border-dark">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            工作地點
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">工作地點 1</a>
+                            <a class="dropdown-item" href="#">工作地點 2</a>
+                            <a class="dropdown-item" href="#">工作地點 3</a>
+                        </div>
+                    </div>
+                    <hr class="bg-dark border-2 border-top border-dark">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            每月薪金
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">每月薪金 1</a>
+                            <a class="dropdown-item" href="#">每月薪金 2</a>
+                            <a class="dropdown-item" href="#">每月薪金 3</a>
+                        </div>
+                    </div>
+                    <hr class="bg-dark border-2 border-top border-dark">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            工種分類
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">工種分類 1</a>
+                            <a class="dropdown-item" href="#">工種分類 2</a>
+                            <a class="dropdown-item" href="#">工種分類 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- middle components -->
+        <div class="col-sm-7">
+            <div class="card bg-info">
+                <div class="card-body">
+                    <table class="table table-striped table-rwd-name table-hidden">
+                        <!-- <thead class="table-only-hide">
+                            <tr>
+                                <th>商品名稱</th>
+                                <th width="150">購買數量</th>
+                                <th width="200">單價</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <!-- Job 1 -->
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg></th>
+                                <td><b>Job 1</b></td>
+                                <td><b>發佈日期 : 2022年4月5日</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>招聘形式：全職</b></td>
+                                <td><b>月薪：$15,000-20,000</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>公司名稱：哈哈哈公司</b></td>
+                                <td><b>工作地點：東區</b></td>
+                            </tr>
+                
+                
+                
+                            <!-- Job 2 -->
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg></th>
+                                <td><b>Job 2</b></td>
+                                <td><b>發佈日期 : 2022年4月5日</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>招聘形式：全職</b></td>
+                                <td><b>月薪：$15,000-20,000</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>公司名稱：哈哈哈公司</b></td>
+                                <td><b>工作地點：東區</b></td>
+                            </tr>
+                
+                
+                            <!-- Job 3 -->
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg></th>
+                                <td><b>Job 3</b></td>
+                                <td><b>發佈日期 : 2022年4月5日</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>招聘形式：全職</b></td>
+                                <td><b>月薪：$15,000-20,000</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>公司名稱：哈哈哈公司</b></td>
+                                <td><b>工作地點：東區</b></td>
+                            </tr>
+
+
+                            <!-- Job 4 -->
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg></th>
+                                <td><b>Job 4</b></td>
+                                <td><b>發佈日期 : 2022年4月5日</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>招聘形式：全職</b></td>
+                                <td><b>月薪：$15,000-20,000</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>公司名稱：哈哈哈公司</b></td>
+                                <td><b>工作地點：東區</b></td>
+                            </tr>
+
+                            <!-- Job 5 -->
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg></th>
+                                <td><b>Job 5</b></td>
+                                <td><b>發佈日期 : 2022年4月5日</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>招聘形式：全職</b></td>
+                                <td><b>月薪：$15,000-20,000</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>公司名稱：哈哈哈公司</b></td>
+                                <td><b>工作地點：東區</b></td>
+                            </tr>
+
+                            <!-- Job 6 -->
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                    </svg></th>
+                                <td><b>Job 6</b></td>
+                                <td><b>發佈日期 : 2022年4月5日</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>招聘形式：全職</b></td>
+                                <td><b>月薪：$15,000-20,000</b></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><b>公司名稱：哈哈哈公司</b></td>
+                                <td><b>工作地點：東區</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- right components -->
+        <div class="col-sm-2">
+            <div class="card bg-info">
+                <div class="card-body">
+                    <p class="card-text text-center" style="height: 200px; padding-top: 90px;"><b>廣告</b></p>
+                    <hr class="bg-dark border-2 border-top border-dark">
+                    <p class="card-text text-center" style="height: 200px; padding-top: 90px;"><b>廣告</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
